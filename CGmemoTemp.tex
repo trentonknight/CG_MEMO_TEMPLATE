@@ -1,19 +1,30 @@
 \documentclass[11pt]{article}
 \renewcommand*{\familydefault}{\sfdefault}
 \usepackage{tikz, graphicx}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{} % sets both header and footer to nothing
-\renewcommand{\headrulewidth}{0pt}
-
-
-% Upper part of the page. The '~' is needed because \\
-% only works if a paragraph has started.
-\lhead{\hspace*{-4cm}\includegraphics[scale=0.2]{logo}}
-\chead{Commanding Officer}
-\rhead{Portsmouth, VA\\[0.25cm]{\today}}
+\usetikzlibrary{positioning}
+\usepackage[english]{babel}
+\tikzstyle{cgnode} =[fill=white, text=black]
 \begin{document}
-\vspace*{1cm}
+
+\begin{tikzpicture}[remember picture, overlay]
+
+	\node[cgnode](one)at (-1.8,0){%
+\includegraphics[scale=0.2]{logo}
+};
+
+\node[cgnode, text width=4cm, right=2cm of one](two){
+Commanding Officer\\
+USCG Base Portsmouth
+};
+
+\node[cgnode, text width=4cm, right=2cm of two](three){
+4000 Coast Guard Boulevard\\
+Portsmouth, Virginia\\  23703-2199
+};
+
+\end{tikzpicture}\\[0.5cm]
+	
+\hspace*{9.5cm}{\textbf{\today}}\\[0.5cm]
 
 \begin{flushleft}
 \hspace*{-4cm}\textsc{\Large \textbf{MEMORANDUM}}\\[0.5cm]
@@ -32,7 +43,7 @@ Commander
 \begin{minipage}{0.4\textwidth}
 \hspace*{-4cm}\large
 \emph{Subj:} 
-LETTER OF RECOMENDATION
+LETTER OF RECOMMENDATION
 \end{minipage}\\[0.25cm]
 \end{flushleft}
 
