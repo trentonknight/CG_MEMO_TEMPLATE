@@ -34,22 +34,22 @@ Portsmouth, Virginia\\  23703-2199
 \large
 \emph{From:}
 Commanding Officer
-\end{minipage}
+\end{minipage}\\[0.15cm]
 
 \begin{minipage}{0.4\textwidth}
 \large
 \emph{To:} 
 Commander
-\end{minipage}
+\end{minipage}\\[0.25cm]
 
 \begin{minipage}{0.8\textwidth}
 \large
 \emph{Subj:} 
 LETTER OF RECOMMENDATION
-\end{minipage}
-\begin{enumerate}
-	\item Petty Officer Too Salty has my strongest recommendation for selection to the U.S. Navy Officer Candidate School Program.
-	\end{enumerate}
+\end{minipage}\\[0.25cm]
+
+Petty Officer Too Salty has my strongest recommendation for selection to the U.S. Navy Officer Candidate School Program.
+
 \begin{center}
 \textbf{\#}
 \end{center}
@@ -57,15 +57,15 @@ LETTER OF RECOMMENDATION
 \begin{minipage}{0.4\textwidth}
 \large
 \emph{Enclosures:} 
-\end{minipage}\\
+\end{minipage}\\[0.25cm]
 \begin{minipage}{0.4\textwidth}
 \large
 \emph{Dist:} 
-\end{minipage}\\
+\end{minipage}\\[0.25cm]
 \begin{minipage}{0.4\textwidth}
 \large
 \emph{Copy:} 
-\end{minipage}\\
+\end{minipage}\\[0.25cm]
 \end{document}
 
 
